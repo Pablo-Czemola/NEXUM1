@@ -19,49 +19,6 @@ body {
     background-color: var(--light-bg);
     color: var(--dark-bg);
 }
-
-/* ---------------- NAVBAR ---------------- */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--primary-color);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar um toque moderno */
-}
-
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-
-/* Links da navbar */
-.nav-links {
-    display: flex;
-    list-style-type: none;
-    gap: 20px; /* Espaçamento entre os links */
-}
-
-.nav-links li {
-    margin: 0;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500; /* Um peso de fonte mais elegante */
-    padding: 10px 20px; /* Adiciona espaçamento nos botões */
-    border-radius: 30px; /* Bordas arredondadas */
-    transition: all 0.3s ease; /* Suaviza as transições */
-}
-
 /* Hover do botão da navbar */
 .nav-links li a:hover {
     background-color: var(--secondary-color); /* Fundo ao passar o mouse */
