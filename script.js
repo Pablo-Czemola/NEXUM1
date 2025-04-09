@@ -1,11 +1,3 @@
-// Menu Burger (Responsivo)
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
-
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    burger.classList.toggle('active');
-});
 // Espera até que o DOM esteja completamente carregado
 document.addEventListener("DOMContentLoaded", function() {
     // Obtém os elementos do formulário e da área de resultado
@@ -51,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
             <p>${conteudoEstudos}</p>
             <h4>Horário Sugerido de Estudo:</h4>
             <ul>
-                <li>08:00 - 10:00: Estudo de Teoria</li>
-                <li>10:30 - 12:00: Prática e Exercícios</li>
-                <li>14:00 - 16:00: Revisão e Preparação para Provas</li>
-                <li>16:30 - 18:00: Acompanhamento de Tutorias ou Estudos em Grupo</li>
+                <li>08:00: Estudo de Teoria</li>
+                <li>08:30: Prática e Exercícios</li>
+                <li>09:00: Revisão e Preparação para Provas</li>
+                <li>09:30: Acompanhamento de Tutorias ou Estudos em Grupo</li>
             </ul>
         `;
 
@@ -124,4 +116,22 @@ function toggleMaterias(elemento) {
     const materias = elemento.nextElementSibling;
     materias.classList.toggle('ativo');
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("loginForm");
+  
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+  
+      const usuario = document.getElementById("Usuário").value.trim();
+      const senha = document.getElementById("Senha").value.trim();
+  
+      if (usuario && senha) {
+        // Redireciona para index.html
+        window.location.href = "index.html";
+      } else {
+        alert("Por favor, preencha todos os campos.");
+      }
+    });
+  });
   
