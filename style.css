@@ -19,79 +19,6 @@ body {
     background-color: var(--light-bg);
     color: var(--dark-bg);
 }
-/* Hover do botão da navbar */
-.nav-links li a:hover {
-    background-color: var(--secondary-color); /* Fundo ao passar o mouse */
-    color: white;
-    transform: translateY(-3px); /* Eleva o botão para dar um efeito de interação */
-}
-
-/* ---------------- MENU RESPONSIVO ---------------- */
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    z-index: 1000;
-    transition: transform 0.3s ease;
-}
-
-.burger .line {
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
-    background-color: white;
-    border-radius: 2px;
-}
-
-/* ---------------- MENU BURGER ATIVO ---------------- */
-.burger.active .line:nth-child(1) {
-    transform: translateY(8px) rotate(45deg); /* Linha superior rotaciona para criar o "X" */
-}
-
-.burger.active .line:nth-child(2) {
-    opacity: 0; /* Linha do meio desaparece */
-}
-
-.burger.active .line:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg); /* Linha inferior rotaciona para criar o "X" */
-}
-
-/* ---------------- RESPONSIVIDADE ---------------- */
-@media screen and (max-width: 768px) {
-    /* Menu mobile */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: var(--primary-color);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 20px 0;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links li a {
-        padding: 12px 0; /* Maior espaço nos botões */
-        font-size: 22px; /* Tamanho maior para facilitar o toque em dispositivos móveis */
-    }
-
-    /* Exibe o botão burger */
-    .burger {
-        display: flex;
-    }
-
-    /* Mostra o menu quando o estado ativo é aplicado */
-    .nav-links.active {
-        display: flex;
-    }
-}
-s
 .burger {
     display: flex;
     flex-direction: column;
@@ -632,7 +559,7 @@ footer {
     align-items: center;
     padding: 1rem;
     background-color: var(--primary-color);
-    color: rgb(109, 95, 95);
+    color: rgb(52, 47, 47);
     cursor: pointer;
     transition: background-color 0.3s;
   }
