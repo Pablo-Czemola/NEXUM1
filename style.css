@@ -111,6 +111,7 @@ body {
 
 /* ---------------- FORMULÁRIOS (LOGIN E CADASTRO) ---------------- */
 .login-container, .cadastro-container {
+    background-color: #ceecf277;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,9 +140,9 @@ body {
         }    
     flex: 1;
     max-width: 400px;
-    background-color: white;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    box-shadow:  1px 1px 5px 5px rgba(0, 0, 0, 0.188);
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -152,33 +153,33 @@ body {
 
 .login-form h2, .cadastro-form h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .login-form input, .cadastro-form input {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
     border: 1px solid var(--secondary-color);
     border-radius: 5px;
     font-size: 16px;
 }
 
 /* Botões */
-button {
-    @font-face { 
-        font-family: intro; 
-        src: url(http://sitename.com/wp-content/themes/themename/fonts/font-name.ttf); 
-        font-weight: normal; 
-        }
+.button {
+    @font-face {font-family: intro; 
+    src: url(http://sitename.com/wp-content/themes/themename/fonts/font-name.ttf); 
+    font-weight: normal; 
+ }
     background-color: var(--secondary-color);
-    color: white;
-    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 60px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top:20px;
 }
 
 button:hover {
